@@ -192,3 +192,6 @@ input::placeholder{
     align-items: center;
     justify-content: center;
 }
+.phone .login-screen,.tablet .login-screen{
+    flex-direction: row;
+}
