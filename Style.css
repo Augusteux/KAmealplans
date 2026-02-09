@@ -2,31 +2,36 @@
     --primary-color:#40749B;
     --secondary-color: #C2E6DB;
 
-    --space-xs: 4px;
-    --space-s: 8px;
-    --space-m: 16px;   
-    --space-l: 24px;    
-    --space-xl: 32px;
-    --space-xxl: 40px;
+    --red: #9E2A2B;
+    --yellow: #F2A900;
+    --brown: #4A2C2A;
+    --white: #FBF5EB;
+    --green: #5C8A3B;
 
-    --font-size-h1: 32px;
-    --font-size-h2: 28px;
-    --font-size-h3: 26px;
-    --font-size-h4: 22px;
-    --font-size-h5: 20px;
-    --font-size-h6: 18px;
-    --font-size-xs:10px;
-    --font-size-s:12px;
-    --font-size-base:14px;
-    --font-size-m:16px;
-    --font-size-l:18px;
+    --space-xs: 0.25em;
+    --space-s: 0.5em;
+    --space-m: 1em;
+    --space-l: 1.5em;    
+    --space-xl: 2em;
+    --space-xxl: 2.5em;
 
+    --font-size-h1: 2em;
+    --font-size-h2: 1.75em;
+    --font-size-h3: 1.625em;
+    --font-size-h4: 1.375em;
+    --font-size-h5: 1.25em;
+    --font-size-h6: 1.125em;
+    --font-size-xs: 0.625em;
+    --font-size-s: 0.75em;
+    --font-size-base: 0.875em;
+    --font-size-m: 1em;
+    --font-size-l: 1.125em;
+    --font-size-xl: 1.25em;
 
+    --border-radius-lg: 1.25em;  
+    --border-radius-md: 0.75em;
 
-    --border-radius-lg: 20px;  
-    --border-radius-md: 12px;
-
-    --font-weight-semi-bold:600;
+    --font-weight-semi-bold: 600;
     --font-weight-bold: 700;
     --font-weight-medium: 500;
 }
@@ -195,3 +200,68 @@ input::placeholder{
 .phone .login-screen,.tablet .login-screen{
     flex-direction: row;
 }
+
+/* ============= landing page =============*/
+
+.landing-body {
+    background-color: var(--white);
+}
+
+.landing-body p {
+    color: white;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.landing-navbar {
+    background-color: var(--green);
+    display: flex;
+    padding: var(--space-s) var(--space-xl);
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.landing-navbar .logo {
+    display: block;
+    height: clamp(2rem, 4vw, 3.5rem);
+    width: auto;
+}
+
+.landing-navbar .options {
+    display: flex;
+    gap: var(--space-l);
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: var(--font-weight-bold);
+}
+
+.landing-hero {
+    display: flex;
+    background-color: var(--brown);
+}
+
+.landing-carousel {
+    background-color: var(--yellow);
+}
+
+.landing-menu-demo{
+    background-color: var(--primary-color);
+}
+
+.landing-footer {
+    background-color: var(--red);
+}
+
+.landing-carousel img {
+    width: 5rem;
+    height: 5rem;
+}
+
